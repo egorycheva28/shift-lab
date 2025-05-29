@@ -1,0 +1,114 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 24px;
+    text-align: left;
+}
+
+.title {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #141C24;
+}
+
+.header {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #141C24;
+}
+
+.phone,
+.otpCode {
+    width: 77%;
+    height: auto;
+    display: flex;
+    gap: 4px;
+    border: 1px solid #CED2DA;
+    border-radius: 8px;
+    padding-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 8px;
+    display: flex;
+    gap: 8px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #637083;
+}
+
+.buttonBlock {
+    width: 57%;
+    height: auto;
+    padding: 16px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.buttonForm {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    border: none;
+    padding: 16px 32px;
+    display: flex;
+    gap: 8px;
+    background-color: #1975FF;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.repeatCode {
+    width: 57%;
+    height: auto;
+    border-radius: 14px;
+    border: none;
+    padding: 16px 32px;
+    display: flex;
+    gap: 8px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #344051;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: -16px;
+}
+
+.timer {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #97A1AF;
+    width: 100%;
+}
