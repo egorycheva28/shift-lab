@@ -66,7 +66,7 @@ const AuthForm = () => {
 			<form onSubmit={handleSubmit} className='form'>
 				{error && <div style={{ color: "red" }}>{error}</div>}
 				<span className='title'>Вход</span>
-				<span className='header'>Введите номер телефона для входа в личный кабинет</span>
+				<span className='header'>Введите {isContinue ? 'проверочный код' : 'номер телефона'} для входа в личный кабинет</span>
 				<input className='phone' type="number" placeholder="Телефон" value={phone} onChange={(e) => setPhone(e.target.value)}
 				/>
 				{isContinue && (
@@ -80,7 +80,7 @@ const AuthForm = () => {
 					<button type="submit" onClick={isContinue ? login : createOtpCode} className='buttonForm'>{isContinue ? 'Войти' : 'Продолжить'}</button>
 				</div>
 				{isContinue && (codeRepeat ? (
-					<button onClick={startTimer} className='repeatCode'>Запросить код ещё раз</button>
+					<button onClick={createOtpCode} className='repeatCode'>Запросить код ещё раз</button>
 				) : (
 					<span className='timer'>Запросить код повторно можно через {timer} секунд</span>
 				))}
